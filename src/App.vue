@@ -10,7 +10,9 @@ import AppFooter from './components/AppFooter.vue'
   <app-footer />
 </template>
 
-<style lang="scss">
+<style lang="scss" module>
+@import '@/assets/scss/_variables.scss';
+
 html {
   overflow-x: hidden;
   margin-right: calc(-1 * (100vw - 100%));
@@ -26,6 +28,21 @@ body {
 
 body * {
   text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  color: $text-black;
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    Segoe UI,
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    Fira Sans,
+    Droid Sans,
+    Helvetica Neue,
+    sans-serif;
 }
 
 h1,
@@ -35,20 +52,8 @@ h4,
 h5,
 h6 {
   font-size: 40px;
-  font-weight: 500;
   line-height: 150%;
   margin: 0;
-}
-
-a {
-  font-size: 14px;
-  font-weight: 400;
-  text-decoration: none;
-}
-
-p {
-  font-size: 14px;
-  font-weight: 400;
 }
 
 button {
