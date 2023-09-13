@@ -5,9 +5,11 @@ import AppFooter from './components/AppFooter.vue'
 </script>
 
 <template>
-  <app-header />
-  <router-view />
-  <app-footer />
+  <div :class="$style.wrapper">
+    <app-header />
+    <router-view />
+    <app-footer />
+  </div>
 </template>
 
 <style lang="scss" module>
@@ -19,6 +21,11 @@ html {
   // overflow-y: hidden;
   height: 100%;
   scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
 }
 
 body {
@@ -66,5 +73,11 @@ button {
 
 input {
   outline: none;
+}
+
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 </style>

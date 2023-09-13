@@ -31,8 +31,12 @@ import SvgLogo from '@/assets/icons/logo.svg?component'
 <style lang="scss" module>
 @import '@/assets/scss/_variables.scss';
 .header {
+  position: fixed;
+  top: 0;
+  z-index: 100;
   padding: 16px;
   width: calc(100% - 32px);
+  background: $background-white;
 }
 
 .wrapper {

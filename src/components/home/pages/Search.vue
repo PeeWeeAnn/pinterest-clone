@@ -43,6 +43,7 @@ import SvgSearch from '@/assets/icons/search.svg?component'
 .search {
   height: 100vh;
   background: $background-search;
+  padding: 85px 0 0 0;
 }
 
 .wrapper {
