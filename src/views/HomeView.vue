@@ -10,7 +10,11 @@ import HomeBottom from '../components/home/pages/Bottom.vue'
 let initialAnchor = 'search'
 window.location.href = 'http://localhost:5173/#search'
 
-const func = (e) => {
+/* const handleScroll = (e) => {
+  sectorScroll(e)
+}
+
+const sectorScroll = (e) => {
   e.preventDefault()
 
   const vectorY = e.deltaY
@@ -42,11 +46,11 @@ const func = (e) => {
         break
     }
   }
-}
+} */
 </script>
 
 <template>
-  <section :class="$style.home" @wheel="func">
+  <section :class="$style.home" @wheel="handleScroll">
     <home-top id="top" />
     <home-search id="search" />
     <home-save id="save" />
